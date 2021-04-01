@@ -6,11 +6,26 @@
     box-sizing: border-box;
 }
 
-nav {
-    background: rgb(49, 49, 141);
-    line-height: 50px;
-    position: fixed;
-    width: 100%;
+:root {
+    --bg-nav: rgb(49, 49, 141);
+    --bg-hover: blueviolet;
+}
+
+
+/* icon rotate */
+
+.rotate {
+    transition: 0.5s;
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 label {
@@ -19,6 +34,17 @@ label {
     color: white;
     font-weight: 200;
     cursor: pointer;
+    margin-left: 10px;
+}
+
+
+/* Nav */
+
+nav {
+    background: var(--bg-nav);
+    line-height: 50px;
+    position: fixed;
+    width: 100%;
 }
 
 nav ul {
@@ -41,15 +67,18 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(60, 60, 180);
+    background-color: var(--bg-hover);
     color: white;
     transition: 0.8s;
 }
 
+
+/* side menu */
+
 .side-menu {
     position: fixed;
-    background: rgb(49, 49, 141);
-    width: 250px;
+    background: var(--bg-nav);
+    width: 180px;
     height: 100%;
     margin-top: 50px;
 }
@@ -71,10 +100,15 @@ nav ul li a:hover {
     color: white;
     line-height: 60px;
     transition: 0.5s;
+    margin-top: 10px;
+}
+
+.side-menu h2 {
+    font-size: 15px;
 }
 
 .side-menu a:hover {
-    background: blueviolet;
+    background: var(--bg-hover);
     padding-left: 20px;
 }
 
@@ -88,4 +122,81 @@ nav ul li a:hover {
     font-size: 20px;
     margin-left: 20px;
     color: white;
+}
+
+
+/* div, data, container */
+
+.main-data {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    margin-left: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+}
+
+.banner {
+    display: flex;
+    position: absolute;
+    width: auto;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 150px;
+    justify-content: center;
+}
+
+.img {
+    display: flex;
+    width: 80%;
+}
+
+.container {
+    margin-top: 350px;
+    margin-left: 3px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 3px 2px 14px (black, 0.4);
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-image {
+    background-image: url('sss.jpg');
+    flex: 0 0 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card-snippet {
+    margin-bottom: 0.5rem;
+}
+
+.card-readmore {
+    margin-top: auto;
+    text-transform: uppercase;
+    font-weight: 700;
 }
