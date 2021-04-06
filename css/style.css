@@ -38,9 +38,37 @@ label {
 }
 
 
+/* header */
+
+header {
+    background: var(--bg-nav);
+    line-height: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+header a {
+    float: right;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+    padding: 6px 15px;
+    font-weight: 500;
+    background-color: blue;
+    border-radius: 3px;
+}
+
+header a:hover {
+    background-color: var(--bg-hover);
+    color: white;
+    transition: 0.8s;
+}
+
+
 /* Nav */
 
-nav {
+
+/* nav {
     background: var(--bg-nav);
     line-height: 50px;
     position: fixed;
@@ -70,7 +98,7 @@ nav ul li a:hover {
     background-color: var(--bg-hover);
     color: white;
     transition: 0.8s;
-}
+} */
 
 
 /* side menu */
@@ -83,16 +111,21 @@ nav ul li a:hover {
     margin-top: 50px;
 }
 
-.side-menu center img {
+.side-menu img {
     height: 120px;
     width: 120px;
     border-radius: 50%;
     margin-top: 30px;
+    margin-left: 30px;
     border: solid white;
 }
 
-.side-menu center h2 {
+.side-menu h2 {
+    display: flex;
+    justify-content: center;
     color: white;
+    margin-top: 15px;
+    border-bottom: solid white;
 }
 
 .side-menu a {
@@ -139,28 +172,34 @@ nav ul li a:hover {
 
 .banner {
     display: flex;
-    position: absolute;
-    width: auto;
+    position: fixed;
+    background-position: center;
+    flex-shrink: 2;
+    width: 100%;
     height: 300px;
-    margin-top: 60px;
-    margin-left: 150px;
+    margin-top: 62.5px;
+    margin-left: 90px;
     justify-content: center;
 }
 
 .img {
     display: flex;
-    width: 80%;
+    width: 83.5%;
 }
 
-.container {
+
+/* .article {
     margin-top: 350px;
     margin-left: 3px;
-}
+} */
 
 .card {
     display: flex;
     flex-direction: column;
+    margin-top: 350px;
+    margin-left: 3px;
     max-width: 450px;
+    height: auto;
     background: white;
     color: black;
     border-radius: 5px;
@@ -172,7 +211,7 @@ nav ul li a:hover {
 
 .card-image {
     background-image: url('sss.jpg');
-    flex: 0 0 200px;
+    flex: 0 0 180px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -199,4 +238,10 @@ nav ul li a:hover {
     margin-top: auto;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+@media screen and (max-width: 1101px) {
+    .img {
+        width: 83%;
+    }
 }
