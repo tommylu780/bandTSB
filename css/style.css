@@ -171,7 +171,7 @@ nav ul li a:hover {
 }
 
 .banner {
-    display: flex;
+    /* display: flex;
     position: fixed;
     background-position: center;
     flex-shrink: 2;
@@ -179,7 +179,10 @@ nav ul li a:hover {
     height: 300px;
     margin-top: 62.5px;
     margin-left: 90px;
+    justify-content: center; */
+    background-position: center;
     justify-content: center;
+    padding: 62.5px 0 0 180px;
 }
 
 .img {
@@ -188,7 +191,6 @@ nav ul li a:hover {
 }
 
 .container {
-    margin-top: 350px;
     margin-left: 3px;
 }
 
