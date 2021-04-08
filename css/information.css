@@ -5,7 +5,6 @@
     list-style: none;
     box-sizing: border-box;
     background-color: rgb(137, 206, 238);
-    
 }
 
 :root {
@@ -24,12 +23,11 @@ nav {
 }
 
 nav ul {
-   display: flex;
-   justify-content:space-between;
-   text-align: center;
-   margin-right: 10px;
-   background: var(--bg-nav);
-    
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 10px;
+    background: var(--bg-nav);
 }
 
 nav ul li {
@@ -53,42 +51,45 @@ nav ul li a:hover {
     transition: 0.8s;
 }
 
+
 /*about us*/
+
 .about-us {
     color: var(--bg-nav);
     padding: 10px;
     margin: 20px;
-    display:block;
+    display: block;
 }
 
-h1,h3{
-
+h1,
+h3 {
     padding: 10px;
     margin-bottom: 20px;
     text-align: center;
     color: var(--bg-nav);
 }
 
-
-.para{
+.para {
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     display: block;
     margin-top: 10px;
-    padding:10px;
+    padding: 10px;
     line-height: 1.5em;
-    text-align: left; 
+    text-align: left;
     align-items: center;
     width: 75%;
     size: 30px;
     border-radius: 20px;
-    background-color:white;
+    background-color: white;
     justify-content: center;
 }
 
+
 /*band member*/
+
 .row {
-    flex:4;
+    flex: 4;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -104,14 +105,14 @@ h1,h3{
     flex: 0 0 300px;
     box-shadow: 10px 10px 5px #5485a5;
     margin: 20px;
-  }
-  
+}
 
 img {
     width: 100%;
     max-height: 200px;
-    border-radius: 20px;;
-  }
+    border-radius: 20px;
+    ;
+}
 
 .btn {
     display: flex;
@@ -120,51 +121,46 @@ img {
     background-color: rgb(235, 212, 11);
     border-radius: 5px;
     justify-content: center;
-    margin:0 40%;
-
+    margin: 0 40%;
 }
 
-button:hover{
+button:hover {
     font-size: 20px;
     background-color: rgb(240, 116, 15);
 }
 
+
 /*personal page*/
 
-.about{
+.about {
     align-items: center;
-    color:white;
-    justify-content:center;
+    color: white;
+    justify-content: center;
     display: block;
     margin: 30px;
-    padding:30px;
+    padding: 30px;
     line-height: 1.2em;
-    text-align: left; 
+    text-align: left;
     align-items: center;
     width: 75%;
     size: 30px;
     border-radius: 20px;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-   
 }
 
-.about p{
+.about p {
     background-color: white;
-    color:var(--bg-nav);
+    color: var(--bg-nav);
     padding: 10px;
     border-radius: 10px;
-
-
 }
-footer{
+
+footer {
     margin-top: 50px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-
-footer:hover{
+footer:hover {
     color: orange;
 }
-
