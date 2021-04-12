@@ -19,14 +19,17 @@ function getAPI() {
                 var datalocation = data[i].venue.location;
                 var ticketlink = data[i].url;
                 var dataimg = data[0].artist.image_url;
+                var dataD = data[0].datetime;
 
                 $("#title" + i).html(datatitle);
                 $("#snippet" + i).html(datadescr);
                 $("#location" + i).html("Location: " + datalocation);
                 $("#link" + i).html("<a href=" + ticketlink + ">" + "get ticket");
                 $("#card-img" + i).html("<img id=" + text + " " + " src=" + dataimg + ">");
+                $("#date" + i).html(dataD);
             }
-            console.log(data);
+            console.log(data[0]);
+            console.log(data[0].offers.url);
 
         })
         .catch(function(error) {
