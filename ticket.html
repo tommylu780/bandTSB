@@ -33,7 +33,7 @@
     <div class="row">
         
         <form class='city-selected'>
-            <label for="cars">"Select a City"</label>
+            <label for="cities"><i class="fas fa-map-marker-alt"> Select a City</i></label>
             <select name="cities" id="cities">
                 <option>Melbourne</option>
                 <option>Sydney</option>
@@ -44,13 +44,14 @@
 
             </select> 
 
-            <input class="submit-btn" type="submit" value="Submit">
+            <input class="showtour-btn" type="submit" value="Show Tours">
         </form>
-            
+
+           
 
         <div class="container">
 
-          <div class="tourMelbourne-1">
+          <div class="tour tourMelbourne" id="Melday-1">
             <h3>We're All Fruit Salad Tour!</h3>
             <h4>8 May</h4>
             <p class="city-name">Melbourne, VIC</p>
@@ -58,7 +59,7 @@
             <button type="button" class="btn">But Tickets</button> 
         </div>
 
-        <div class="tourMelbourne-2">
+        <div class="tour tourMelbourne" id="Melday-2">
             <h3>We're All Fruit Salad Tour!</h3>
             <h4>9 May</h4>
             <p class="city-name">Melbourne, VIC</p>
@@ -66,7 +67,7 @@
             <button type="button" class="btn">But Tickets</button> 
         </div>
 
-        <div class="tourMelbourne-3">
+        <div class="tour tourMelbourne" id="Melday-3">
             <h3>We're All Fruit Salad Tour!</h3>
             <h4>10 May</h4>
             <p class="city-name">Melbourne, VIC</p>
@@ -74,7 +75,7 @@
             <button type="button" class="btn">But Tickets</button> 
         </div>
 
-        <div class="tourSydney-1">
+        <div class="tour tourSydney" id="Syeday-1">
             <h3>We're All Fruit Salad Tour!</h3>
             <h4>24 April</h4>
             <p class="city-name">Sydney, NSW</p>
@@ -82,7 +83,7 @@
             <button type="button" class="btn">But Tickets</button> 
         </div>
 
-        <div class="tourSydney-2">
+        <div class="tour tourSydney" id="Syeday-2">
             <h3>We're All Fruit Salad Tour!</h3>
             <h4>25 April</h4>
             <p class="city-name">Sydney, NSW</p>
@@ -90,7 +91,7 @@
             <button type="button" class="btn">But Tickets</button> 
         </div>
 
-        <div class="tourPerth-1">
+        <div class="tour tourPerth" id="Perday-1">
             <h3>We're All Fruit Salad Tour!</h3>
             <h4>29 May</h4>
             <p class="city-name">Perth, WA</p>
@@ -98,7 +99,7 @@
             <button type="button" class="btn">But Tickets</button> 
         </div>
 
-        <div class="tourPerth-2">
+        <div class="tour tourPerth" id="Perday-2">
             <h3>We're All Fruit Salad Tour!</h3>
             <h4>30 May</h4>
             <p class="city-name">Perth, WA</p>
@@ -106,7 +107,7 @@
             <button type="button" class="btn">But Tickets</button> 
         </div>
 
-        <div class="tourBrisbane-1">
+        <div class="tour tourBrisbane" id="Briday-1">
             <h3>We're All Fruit Salad Tour!</h3>
             <h4>2 May</h4>
             <p class="city-name">Brisbane, QLD</p>
@@ -114,7 +115,7 @@
             <button type="button" class="btn">But Tickets</button> 
         </div>
 
-        <div class="tourAdelaide-1">
+        <div class="tour tourBrisbane" id="Briday-2">
             <h3>We're All Fruit Salad Tour!</h3>
             <h4>13 April</h4>
             <p class="city-name">Adelaide, SA</p>
@@ -122,7 +123,7 @@
             <button type="button" class="btn">But Tickets</button> 
         </div>
 
-        <div class="tourBendigo-1">
+        <div class="tour tourBendigo-1">
             <h3>We're All Fruit Salad Tour!</h3>
             <h4>15 April</h4>
             <p class="city-name">Bendigo, VIC</p>
@@ -132,17 +133,43 @@
 
     </div>
 
-    <!--ticket price-->
-    <div class="tickets-price">Select Seats!
+     <!--ticket price-->
+     <div class="tickets-select">
+         <h3><i class="fas fa-ticket-alt"> Select Seats!</i></h3>
         <ul>
-            <li>VIP Seats Price: $104.65</li>
-            <li>Front Seats Price: $42.9</li>
-            <li> Back Seats Price: $38.9</li>
-            
+            <li id="vip">VIP Seats Price: $104.65</li>
+            <select name="ticketing" id="ticketing" onchange="buyTicket(this.value);">
+                <option value="0" disabled selected>Ticket Number</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <li id="front">Front Seats Price: $42.9</li>
+            <select name="ticketing" id="ticketing" onchange="buyTicket(this.value);">
+                <option value="0" disabled selected>Ticket Number</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <li id="back"> Back Seats Price: $38.9</li>
+            <select name="ticketing" id="ticketing" onchange="buyTicket(this.value);">
+                <option value="0" disabled selected>Ticket Number</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>            
         </ul>
     </div>
 
+            
 
+</div>
     <script src="js/ticket.js"></script>
 </body>
 

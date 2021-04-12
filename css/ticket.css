@@ -3,7 +3,9 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;      
+    box-sizing: border-box;    
+    
+   
 }
 
 :root {
@@ -124,23 +126,99 @@ header a:hover {
 
 /*main*/
 
+.row {
+    margin-left: 250px;
+    padding: 80px 0 0 0px;
+}
+
 .city-selected{
-   margin-left: 200px;
-   position: fixed;
-   margin-top: 100px;
-    
+   width: 50%;
+   height: 80px;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   display:flexbox;
+   background-color: rgb(137, 206, 238);
+   border: 5px solid darkblue;
+   border-radius: 10px;
+   padding: 10px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 label {
     color: black;
+    justify-content: space-around;
 
 }
 
-.container{
+.showtour-btn {
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 20px;
+    background-color: rgb(247, 211, 52);
+}
 
-    margin-left: 250px;
+.showtour-btn :hover {
+    size: 30px;
+    background-color: yellow;
+    
+}
+.container{
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   display: block;
+   margin-top: 20px;
+   padding: 20px 10px;
+   margin: 10px 20px;
    
-   position: fixed;
-   margin-top: 200px;
-   ;
+}
+
+.container h4{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+.tickets-select{    
+   width: 20%;
+   height: 70px;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   display:flexbox;
+   background-color: rgb(137, 206, 238);
+   border: 5px solid darkblue;
+   border-radius: 10px;
+   padding: 10px;
+   margin: 0px 20px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tickets-select h3 {
+    padding: 20px;
+}
+
+.tickets-select ul {
+    display:block;
+}
+
+.tour {
+    width: 300px;
+    background-color: rgb(227, 205, 248);
+    margin-bottom: 20px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.btn {
+    background-color: rgb(247, 211, 52);
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    position: relative;
+}
+
+.btn :hover {
+    background-color: orange;
 }
