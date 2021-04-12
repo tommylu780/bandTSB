@@ -3,7 +3,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;      
+    box-sizing: border-box;
 }
 
 :root {
@@ -64,6 +64,7 @@ header a:hover {
     transition: 0.8s;
 }
 
+
 /* side menu */
 
 .side-menu {
@@ -123,6 +124,7 @@ header a:hover {
 
 /* Nav */
 
+
 /*nav {
     background: var(--bg-nav);
     line-height: 50px;
@@ -167,140 +169,167 @@ nav ul li a:hover {
     color: var(--bg-nav);
     background-color: rgb(137, 206, 238);
     margin-left: 180px;
-    
 }
+
+
 /*about us*/
+
 .about-us {
     color: var(--bg-nav);
     padding: 10px;
     margin-left: 180px;
-    display:block;
+    display: block;
     background-color: rgb(137, 206, 238);
 }
 
-.about-us h1, h3 {
-
+.about-us h1,
+h3 {
     padding: 20px;
     text-align: center;
     color: var(--bg-nav);
     background-color: rgb(137, 206, 238);
     margin-top: 50px;
-
 }
 
-.para{
+.para {
     display: block;
     margin-top: 10px;
-    padding:20px;
+    padding: 20px;
     line-height: 1.5em;
-    text-align: left; 
+    text-align: left;
     align-items: center;
     width: 75%;
     size: 30px;
     border-radius: 20px;
-    background-color:white;
+    background-color: white;
     margin-left: 160px;
 }
 
+
 /*band member*/
+
 .row {
-    flex:4;
-    padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin-left: 180px;
-    background-color: rgb(137, 206, 238);
-
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+    padding-left: 180px;
+    background-color: rgb(137, 206, 238)
 }
 
-
 .profolio {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    padding: 20px;
-    flex: 0 0 300px;
-    box-shadow: 10px 10px 5px #5485a5;
-    margin: 20px;
-  }
-  
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+    margin-top: 16px;
+}
 
 img {
     width: 100%;
-    max-height: 200px;
-    border-radius: 20px;;
-  }
+    border-radius: 20px;
+}
 
-.btn {
+.profolio .imgX {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.profolio .imgX img {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profolio:hover .imgX {
+    bottom: 80px;
+}
+
+.profolio .detail {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+}
+
+.profolio .detail h2 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.profolio .detail h2 a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #f38695;
+    display: block;
+    margin-top: 5px;
+}
+
+
+/* .btn {
     display: flex;
     font-size: 15px;
     padding: 10px;
     background-color: rgb(235, 212, 11);
     border-radius: 5px;
     justify-content: center;
-    margin:0 40%;
-
+    margin: 0 40%;
 }
 
-button:hover{
+button:hover {
     font-size: 20px;
     background-color: rgb(240, 116, 15);
-}
+} */
+
 
 /*personal page*/
 
-.about{
+.about {
     align-items: center;
-    color:white;
-    justify-content:center;
+    color: white;
+    justify-content: center;
     margin-left: 180px;
-    padding:30px;
+    padding: 30px;
     line-height: 1.2em;
-    text-align: left; 
+    text-align: left;
     align-items: center;
     width: 75%;
     size: 30px;
     border-radius: 20px;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-   
 }
 
-.about h1{
-
+.about h1 {
     padding: 20px;
-    margin-top:60px;
+    margin-top: 60px;
     padding: 20px;
     text-align: center;
     color: brown;
-    background-color:rgb(137, 206, 238);
+    background-color: rgb(137, 206, 238);
     margin-left: 180px;
 }
 
-
-.about p{
+.about p {
     background-color: white;
-    color:var(--bg-nav);
+    color: var(--bg-nav);
     padding: 10px;
     border-radius: 10px;
     margin-left: 180px;
     margin-top: 30px;
 }
-
-
-
-
-/*.main{
-    position: fixed;
-    margin-bottom: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-
-/*.main:hover{ 
-    color: orange;
-}
-
