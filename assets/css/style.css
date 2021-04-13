@@ -256,9 +256,19 @@ footer {
         padding: 150px 0 0 -50px;
     }
     .img {
-        width: 120%;
+        visibility: hidden;
     }
     .card {
         max-width: 250px;
+    }
+    .side-menu {
+        visibility: hidden;
+        background: rgb(137, 206, 238);
+    }
+    .main-data {
+        background-color: white;
+    }
+    .card {
+        box-shadow: 10px 5px 15px cornflowerblue;
     }
 }
