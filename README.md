@@ -57,7 +57,7 @@ Have a clean repository that meets quality coding standards
 - Github - https://github.com/tommylu780
 
 **Susan Su**
-- Email - //suchangau@hotmail.com
+- Email - suchangau@hotmail.com
 - Github - https://github.com/SusanSu123
 
 **Brent Browney**
