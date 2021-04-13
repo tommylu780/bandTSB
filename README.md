@@ -21,6 +21,7 @@
 * Using BandsinTown API to searching concerts lacation, date and tickets information.
 
 # User Story:
+```
 AS A FAN
 I WANT to see Wiggles'revent concerts 
 SO THAT I can plan to buy tickets
@@ -33,6 +34,7 @@ Click on 'Video Links' button on Sidebar
 SO that you can watched video linked to youtube
 Click on 'Feedback' button on Sidebar
 SO users can leave a feekback to us
+```
 
 # Requirements
 
