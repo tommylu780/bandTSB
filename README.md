@@ -23,7 +23,7 @@
 # User Story:
 ```
 AS A FAN
-I WANT to see Wiggles'revent concerts 
+I WANT to see Wiggles'recent concerts 
 SO THAT I can plan to buy tickets
 OPEN https://tommylu780.github.io/bandTSB/
 CLICK on Home button on Sidebar, 
