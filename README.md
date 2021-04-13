@@ -24,7 +24,7 @@
 AS A FAN
 I WANT to see Wiggles'revent concerts 
 SO THAT I can plan to buy tickets
-OPEN file:///Users/susan/Documents/Homework/bandTSB/index.html
+OPEN https://tommylu780.github.io/bandTSB/
 CLICK on Home button on Sidebar, 
 SO that you can find Tour information, and click "GET TICKET' linked buy ticket website
 Click on 'Information' button on Sidebar
