@@ -65,42 +65,6 @@ header a:hover {
 }
 
 
-/* Nav */
-
-
-/* nav {
-    background: var(--bg-nav);
-    line-height: 50px;
-    position: fixed;
-    width: 100%;
-}
-
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-    line-height: 50px;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 20px;
-    padding: 6px 15px;
-    font-weight: 600;
-    background-color: blue;
-    border-radius: 3px;
-}
-
-nav ul li a:hover {
-    background-color: var(--bg-hover);
-    color: white;
-    transition: 0.8s;
-} */
-
-
 /* side menu */
 
 .side-menu {
@@ -137,7 +101,7 @@ nav ul li a:hover {
 }
 
 .side-menu h2 {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .side-menu a:hover {
@@ -191,7 +155,6 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    box-shadow: 3px 2px 14px (black, 0.4);
 }
 
 .card {
@@ -262,19 +225,8 @@ nav ul li a:hover {
     font-size: large;
 }
 
-
-/* .rside {
-    display: flex;
-    background: var(--bg-nav);
-    width: 200px;
-    height: 100vh;
-    margin-top: 50px;
-    color: white;
-} */
-
 footer {
     position: inherit;
-    /* background-color: var(--bg-nav); */
     padding: 0 10px 0 190px;
     background-color: violet;
 }
@@ -288,7 +240,25 @@ footer {
 }
 
 @media screen and (max-width: 1101px) {
+    .banner {
+        padding: 120px 0 0 0px;
+    }
     .img {
-        width: 83%;
+        width: 100%;
+    }
+    .card {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner {
+        padding: 150px 0 0 -50px;
+    }
+    .img {
+        width: 120%;
+    }
+    .card {
+        max-width: 250px;
     }
 }

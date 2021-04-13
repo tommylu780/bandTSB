@@ -1,5 +1,4 @@
 var query = "https://rest.bandsintown.com/artists/the%20wiggles/events?app_id=coding"
-var queryY = "https://youtube.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UC5vVe2R4ucoMzJP53o38Yaw&key=AIzaSyA-enB949bkk4hCtJmrwpy_dHle7YjH1wQ"
 var links = document.querySelectorAll(".card a");
 var text = "rsimg";
 // links[0].attributes.href
@@ -28,8 +27,9 @@ function getAPI() {
                 $("#card-img" + i).html("<img id=" + text + " " + " src=" + dataimg + ">");
                 $("#date" + i).html(dataD);
             }
-            console.log(data[0]);
-            console.log(data[0].offers.url);
+
+            console.log(data);
+            console.log(data[0].artist.url);
 
         })
         .catch(function(error) {
