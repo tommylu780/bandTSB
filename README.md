@@ -7,6 +7,7 @@
 
 **Live Project**
 * https://tommylu780.github.io/bandTSB/
+
 # Built With:
 
 * HTML
@@ -14,13 +15,24 @@
 * reset.css (Link in recources)
 * Javascript
 
-# Aim :
-
 # Project Description:
 
+* We are using HTML, CSS to built the webpage, and useing youtube API for searching Wiggles videos 
+* Using BandsinTown API to searching concerts lacation, date and tickets information.
 
 # User Story:
-
+AS A FAN
+I WANT to see Wiggles'revent concerts 
+SO THAT I can plan to buy tickets
+OPEN file:///Users/susan/Documents/Homework/bandTSB/index.html
+CLICK on Home button on Sidebar, 
+SO that you can find Tour information, and click "GET TICKET' linked buy ticket website
+Click on 'Information' button on Sidebar
+SO that you can find introduction for band members
+Click on 'Video Links' button on Sidebar
+SO that you can watched video linked to youtube
+Click on 'Feedback' button on Sidebar
+SO users can leave a feekback to us
 
 # Requirements
 
@@ -45,7 +57,7 @@ Have a clean repository that meets quality coding standards
 - Github - https://github.com/tommylu780
 
 **Susan Su**
-- Email - //
+- Email - //suchangau@hotmail.com
 - Github - https://github.com/SusanSu123
 
 **Brent Browney**
